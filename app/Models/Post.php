@@ -9,4 +9,5 @@ class Post extends Model
 {
     use HasFactory;
     protected $fillable = ['url', 'desc', 'tanggal'];
+    protected $casts = ["url" => "array"];
 }
